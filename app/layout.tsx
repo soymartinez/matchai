@@ -1,4 +1,10 @@
 import '@/styles/globals.css'
+import { Inter as Font } from '@next/font/google'
+
+const font = Font({
+  subsets: ['latin'],
+  variable: '--font-sans',
+})
 
 export default function RootLayout({
   children,
@@ -7,12 +13,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
       <head />
-      <body>{children}</body>
+      <body className={`${font.variable} font-sans`}>{children}</body>
     </html>
   )
 }
