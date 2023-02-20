@@ -16,7 +16,7 @@ export default function Home() {
   }
 
   return (
-    <main className='flex flex-col gap-6 items-center justify-center min-h-[80vh] py-2'>
+    <main className='flex flex-col gap-6 items-center justify-center min-h-[80vh] py-2 px-3'>
       <h1 className='text-4xl font-bold'>Match AI</h1>
       <section className='max-w-lg w-full'>
         <form className='flex flex-col gap-3'>
