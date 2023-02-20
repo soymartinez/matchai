@@ -92,7 +92,7 @@ export function CommandCombobox() {
         <Command>
           <CommandInput placeholder='Search reason...' />
           <CommandEmpty>No reason found.</CommandEmpty>
-          <CommandGroup>
+          <CommandGroup className='h-64 overflow-auto'>
             {reasons.map((reason) => (
               <CommandItem
                 key={reason.value}
